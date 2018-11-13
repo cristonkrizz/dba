@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User account:</strong>
+  <%= @job_post_activity.user_account %>
+</p>
+
+<p>
+  <strong>Job post:</strong>
+  <%= @job_post_activity.job_post %>
+</p>
+
+<p>
+  <strong>Apply date:</strong>
+  <%= @job_post_activity.apply_date %>
+</p>
+
+<%= link_to 'Edit', edit_job_post_activity_path(@job_post_activity) %> |
+<%= link_to 'Back', job_post_activities_path %>

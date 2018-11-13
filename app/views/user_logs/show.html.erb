@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last login date:</strong>
+  <%= @user_log.last_login_date %>
+</p>
+
+<p>
+  <strong>Last job apply date:</strong>
+  <%= @user_log.last_job_apply_date %>
+</p>
+
+<%= link_to 'Edit', edit_user_log_path(@user_log) %> |
+<%= link_to 'Back', user_logs_path %>

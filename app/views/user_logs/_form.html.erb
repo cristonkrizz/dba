@@ -1,0 +1,27 @@
+<%= form_with(model: user_log, local: true) do |form| %>
+  <% if user_log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user_log.errors.count, "error") %> prohibited this user_log from being saved:</h2>
+
+      <ul>
+      <% user_log.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :last_login_date %>
+    <%= form.datetime_select :last_login_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_job_apply_date %>
+    <%= form.datetime_select :last_job_apply_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

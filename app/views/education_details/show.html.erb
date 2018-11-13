@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User account:</strong>
+  <%= @education_detail.user_account %>
+</p>
+
+<p>
+  <strong>Certificate degree name:</strong>
+  <%= @education_detail.certificate_degree_name %>
+</p>
+
+<p>
+  <strong>Major:</strong>
+  <%= @education_detail.major %>
+</p>
+
+<p>
+  <strong>Institute university name:</strong>
+  <%= @education_detail.Institute_university_name %>
+</p>
+
+<p>
+  <strong>Starting date:</strong>
+  <%= @education_detail.starting_date %>
+</p>
+
+<p>
+  <strong>Completion date:</strong>
+  <%= @education_detail.completion_date %>
+</p>
+
+<p>
+  <strong>Percentage:</strong>
+  <%= @education_detail.percentage %>
+</p>
+
+<p>
+  <strong>Cgpa:</strong>
+  <%= @education_detail.cgpa %>
+</p>
+
+<%= link_to 'Edit', edit_education_detail_path(@education_detail) %> |
+<%= link_to 'Back', education_details_path %>

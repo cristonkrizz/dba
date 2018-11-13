@@ -1,0 +1,33 @@
+Script for scaffold:
+
+rails generate scaffold BusinessStream business_stream_name:string --no-migration
+
+rails generate scaffold Company company_name:string profile_description:string business_stream:references establishment_date:datetime company_website_url:string --no-migration
+
+rails generate scaffold CompanyImage company:references company_image:binary --no-migration
+
+rails generate scaffold EducationDetail user_account:references certificate_degree_name:string major:string Institute_university_name:string starting_date:datetime completion_date:datetime percentage:float cgpa:float --no-migration
+
+rails generate scaffold ExperienceDetail user_account:references is_current_job:string start_date:datetime end_date:datetime job_title:string company_name:string job_location_city:string job_location_state:string job_location_country:string description:string --no-migration
+
+rails generate scaffold JobLocation street_address:string city:string state:string country:string zip:string --no-migration
+
+rails generate scaffold JobPost posted_by:references job_type:references company:references is_company_name_hidden:string created_date:datetime job_description:string job_location:references is_active:string --no-migration
+
+rails generate scaffold JobPostActivity user_account:references job_post:references apply_date:datetime --no-migration
+
+rails generate scaffold JobPostSkillSet skill_set:references job_post:references skill_level:float --no-migration
+
+rails generate scaffold JobType job_type:string --no-migration
+
+rails generate scaffold SeekerProfile first_name:string last_name:string current_salary:float is_annually_monthly:string currency:string --no-migration
+
+rails generate scaffold SeekerSkillSet user_account:references skill_set:references skill_level:float --no-migration
+
+rails generate scaffold SkillSet skill_set_name:string --no-migration
+
+rails generate scaffold UserAccount user_type:references email:string password:string date_of_birth:datetime gender:string is_active:string contact_number:bigint sms_notification_active:string email_notification_active:string user_image:binary registration_date:datetime --no-migration
+
+rails generate scaffold UserLog last_login_date:datetime last_job_apply_date:datetime --no-migration
+
+rails generate scaffold UserType user_type_name:string --no-migration

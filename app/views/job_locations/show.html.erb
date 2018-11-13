@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @job_location.street_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @job_location.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @job_location.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @job_location.country %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @job_location.zip %>
+</p>
+
+<%= link_to 'Edit', edit_job_location_path(@job_location) %> |
+<%= link_to 'Back', job_locations_path %>

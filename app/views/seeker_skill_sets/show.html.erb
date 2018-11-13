@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User account:</strong>
+  <%= @seeker_skill_set.user_account %>
+</p>
+
+<p>
+  <strong>Skill set:</strong>
+  <%= @seeker_skill_set.skill_set %>
+</p>
+
+<p>
+  <strong>Skill level:</strong>
+  <%= @seeker_skill_set.skill_level %>
+</p>
+
+<%= link_to 'Edit', edit_seeker_skill_set_path(@seeker_skill_set) %> |
+<%= link_to 'Back', seeker_skill_sets_path %>

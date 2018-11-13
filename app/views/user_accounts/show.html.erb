@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User type:</strong>
+  <%= @user_account.user_type %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user_account.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user_account.password %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @user_account.date_of_birth %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @user_account.gender %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @user_account.is_active %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @user_account.contact_number %>
+</p>
+
+<p>
+  <strong>Sms notification active:</strong>
+  <%= @user_account.sms_notification_active %>
+</p>
+
+<p>
+  <strong>Email notification active:</strong>
+  <%= @user_account.email_notification_active %>
+</p>
+
+<p>
+  <strong>User image:</strong>
+  <%= @user_account.user_image %>
+</p>
+
+<p>
+  <strong>Registration date:</strong>
+  <%= @user_account.registration_date %>
+</p>
+
+<%= link_to 'Edit', edit_user_account_path(@user_account) %> |
+<%= link_to 'Back', user_accounts_path %>

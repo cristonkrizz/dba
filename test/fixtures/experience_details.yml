@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_account: one
+  is_current_job: MyString
+  start_date: 2018-11-14 00:03:21
+  end_date: 2018-11-14 00:03:21
+  job_title: MyString
+  company_name: MyString
+  job_location_city: MyString
+  job_location_state: MyString
+  job_location_country: MyString
+  description: MyString
+
+two:
+  user_account: two
+  is_current_job: MyString
+  start_date: 2018-11-14 00:03:21
+  end_date: 2018-11-14 00:03:21
+  job_title: MyString
+  company_name: MyString
+  job_location_city: MyString
+  job_location_state: MyString
+  job_location_country: MyString
+  description: MyString

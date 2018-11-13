@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Experience Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User account</th>
+      <th>Is current job</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Job title</th>
+      <th>Company name</th>
+      <th>Job location city</th>
+      <th>Job location state</th>
+      <th>Job location country</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @experience_details.each do |experience_detail| %>
+      <tr>
+        <td><%= experience_detail.user_account %></td>
+        <td><%= experience_detail.is_current_job %></td>
+        <td><%= experience_detail.start_date %></td>
+        <td><%= experience_detail.end_date %></td>
+        <td><%= experience_detail.job_title %></td>
+        <td><%= experience_detail.company_name %></td>
+        <td><%= experience_detail.job_location_city %></td>
+        <td><%= experience_detail.job_location_state %></td>
+        <td><%= experience_detail.job_location_country %></td>
+        <td><%= experience_detail.description %></td>
+        <td><%= link_to 'Show', experience_detail %></td>
+        <td><%= link_to 'Edit', edit_experience_detail_path(experience_detail) %></td>
+        <td><%= link_to 'Destroy', experience_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Experience Detail', new_experience_detail_path %>

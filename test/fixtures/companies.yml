@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_name: MyString
+  profile_description: MyString
+  business_stream: one
+  establishment_date: 2018-11-14 00:02:15
+  company_website_url: MyString
+
+two:
+  company_name: MyString
+  profile_description: MyString
+  business_stream: two
+  establishment_date: 2018-11-14 00:02:15
+  company_website_url: MyString

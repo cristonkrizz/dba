@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @company_image.company %>
+</p>
+
+<p>
+  <strong>Company image:</strong>
+  <%= @company_image.company_image %>
+</p>
+
+<%= link_to 'Edit', edit_company_image_path(@company_image) %> |
+<%= link_to 'Back', company_images_path %>

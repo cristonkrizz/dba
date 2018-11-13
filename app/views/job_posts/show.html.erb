@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Posted by:</strong>
+  <%= @job_post.posted_by %>
+</p>
+
+<p>
+  <strong>Job type:</strong>
+  <%= @job_post.job_type %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @job_post.company %>
+</p>
+
+<p>
+  <strong>Is company name hidden:</strong>
+  <%= @job_post.is_company_name_hidden %>
+</p>
+
+<p>
+  <strong>Created date:</strong>
+  <%= @job_post.created_date %>
+</p>
+
+<p>
+  <strong>Job description:</strong>
+  <%= @job_post.job_description %>
+</p>
+
+<p>
+  <strong>Job location:</strong>
+  <%= @job_post.job_location %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @job_post.is_active %>
+</p>
+
+<%= link_to 'Edit', edit_job_post_path(@job_post) %> |
+<%= link_to 'Back', job_posts_path %>

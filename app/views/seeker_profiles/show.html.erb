@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @seeker_profile.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @seeker_profile.last_name %>
+</p>
+
+<p>
+  <strong>Current salary:</strong>
+  <%= @seeker_profile.current_salary %>
+</p>
+
+<p>
+  <strong>Is annually monthly:</strong>
+  <%= @seeker_profile.is_annually_monthly %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @seeker_profile.currency %>
+</p>
+
+<%= link_to 'Edit', edit_seeker_profile_path(@seeker_profile) %> |
+<%= link_to 'Back', seeker_profiles_path %>

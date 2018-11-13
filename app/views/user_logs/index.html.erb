@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Last login date</th>
+      <th>Last job apply date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_logs.each do |user_log| %>
+      <tr>
+        <td><%= user_log.last_login_date %></td>
+        <td><%= user_log.last_job_apply_date %></td>
+        <td><%= link_to 'Show', user_log %></td>
+        <td><%= link_to 'Edit', edit_user_log_path(user_log) %></td>
+        <td><%= link_to 'Destroy', user_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User Log', new_user_log_path %>

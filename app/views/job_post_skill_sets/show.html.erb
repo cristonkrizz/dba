@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Skill set:</strong>
+  <%= @job_post_skill_set.skill_set %>
+</p>
+
+<p>
+  <strong>Job post:</strong>
+  <%= @job_post_skill_set.job_post %>
+</p>
+
+<p>
+  <strong>Skill level:</strong>
+  <%= @job_post_skill_set.skill_level %>
+</p>
+
+<%= link_to 'Edit', edit_job_post_skill_set_path(@job_post_skill_set) %> |
+<%= link_to 'Back', job_post_skill_sets_path %>
