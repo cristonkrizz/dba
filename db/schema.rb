@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2018_11_13_183235) do
 
   create_table "business_stream", id: :float, limit: 53, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "business_stream_name", limit: 100, null: false
+  end
+
+  create_table "business_streams", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "business_stream_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "companies", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "company_name"
+    t.string "profile_description"
+    t.bigint "business_stream_id"
+    t.datetime "establishment_date"
+    t.string "company_website_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["business_stream_id"], name: "index_companies_on_business_stream_id"
   end
 
   create_table "company", id: :float, limit: 53, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
@@ -29,6 +46,14 @@ ActiveRecord::Schema.define(version: 0) do
     t.float "company_id", limit: 53, null: false
     t.binary "company_image", limit: 4294967295, null: false
     t.index ["company_id"], name: "company_image_company"
+  end
+
+  create_table "company_images", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.bigint "company_id"
+    t.binary "company_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["company_id"], name: "index_company_images_on_company_id"
   end
 
   create_table "education_detail", primary_key: ["user_account_id", "certificate_degree_name", "major"], options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
@@ -139,8 +164,10 @@ ActiveRecord::Schema.define(version: 0) do
     t.string "user_type_name", limit: 20, null: false
   end
 
+  add_foreign_key "companies", "business_streams"
   add_foreign_key "company", "business_stream", name: "company_business_stream"
   add_foreign_key "company_image", "company", name: "company_image_company"
+  add_foreign_key "company_images", "companies"
   add_foreign_key "education_detail", "seeker_profile", column: "user_account_id", primary_key: "user_account_id", name: "educ_dtl_seeker_profile"
   add_foreign_key "experience_detail", "seeker_profile", column: "user_account_id", primary_key: "user_account_id", name: "exp_dtl_seeker_profile"
   add_foreign_key "job_post", "company", name: "job_post_company"

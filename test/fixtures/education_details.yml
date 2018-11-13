@@ -5,8 +5,8 @@ one:
   certificate_degree_name: MyString
   major: MyString
   Institute_university_name: MyString
-  starting_date: 2018-11-14 00:02:57
-  completion_date: 2018-11-14 00:02:57
+  starting_date: 2018-11-14 01:14:32
+  completion_date: 2018-11-14 01:14:32
   percentage: 1.5
   cgpa: 1.5
 
@@ -15,7 +15,7 @@ two:
   certificate_degree_name: MyString
   major: MyString
   Institute_university_name: MyString
-  starting_date: 2018-11-14 00:02:57
-  completion_date: 2018-11-14 00:02:57
+  starting_date: 2018-11-14 01:14:32
+  completion_date: 2018-11-14 01:14:32
   percentage: 1.5
   cgpa: 1.5

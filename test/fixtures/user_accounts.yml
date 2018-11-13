@@ -4,24 +4,24 @@ one:
   user_type: one
   email: MyString
   password: MyString
-  date_of_birth: 2018-11-14 00:04:11
+  date_of_birth: 2018-11-14 01:14:42
   gender: MyString
   is_active: MyString
   contact_number: 
   sms_notification_active: MyString
   email_notification_active: MyString
   user_image: 
-  registration_date: 2018-11-14 00:04:11
+  registration_date: 2018-11-14 01:14:42
 
 two:
   user_type: two
   email: MyString
   password: MyString
-  date_of_birth: 2018-11-14 00:04:11
+  date_of_birth: 2018-11-14 01:14:42
   gender: MyString
   is_active: MyString
   contact_number: 
   sms_notification_active: MyString
   email_notification_active: MyString
   user_image: 
-  registration_date: 2018-11-14 00:04:11
+  registration_date: 2018-11-14 01:14:42
